@@ -1,5 +1,5 @@
 .App {
-  box-sizing: auto;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -10,68 +10,57 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: antiquewhite;
+  text-align: center;
 }
 
 h1 {
-  color: antiquewhite;
+  font-size: 50px;
   text-align: center;
-}
-
-h2 {
-  display: flex;
-  text-align: center;
-  text-decoration: underline;
 }
 
 .titulo-planetas {
+  background: rgba(24, 26, 37, 0.5);
+  border: 1px solid antiquewhite;
+  border-radius: 10px;
   text-align: center;
-
-}
-
-.titulo-missoes {
-  text-align: center;
-}
-
-.title {
-  font-size: 50px;
-  font-style: oblique;
-  text-align: center;
-}
-
-.planet-name {
-  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .planets {
   display: flex;
-  justify-content: space-evenly;
-  margin: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.imgsize {
-  width: 65%;
+.planet-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.planet-card img {
+  width: 100px;
+}
+
+.planet-card p {
+  text-align: center;
 }
 
 .mission-card {
-  align-items: center;
-  border-color: white;
+  border: 1px solid antiquewhite;
   border-radius: 10px;
-  border-style: solid;
-  border-width: medium;
-  display: flex;
-  flex-direction: column;
-  width: 20%;
+  margin: 10px;
+  width: 200px;
 }
 
 .div-cards {
-  align-items: center;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  margin: 100px;
-  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card-name {
-  text-decoration: underline;
+  border-bottom: 1px solid antiquewhite;
 }
